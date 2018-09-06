@@ -1,0 +1,114 @@
+/* 
+    Created on : 03/09/2018, 13:24:53
+    Author     : Anderson Bucchainico
+*/
+
+body{
+    font-family: "Segoe UI", Arial, Sans-serif;
+    font-size: 15px;
+}
+
+nav{
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-top: -10px;
+    
+    padding-left: 30px;
+    
+    border-style: solid;
+    border-color: #888888;
+    border-width: 1px;
+    
+    background-color: #f5f5f5;
+    
+    width: max-content;
+    height: 73px;
+}
+
+div#links{
+    position: absolute;
+    margin-left: 250px;
+    width: 700px;
+    height:fit-content;
+}
+
+div#container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 750px;
+    text-align: center;
+}
+
+input#inputnoticia,textArea{
+    width: 640px;
+    margin-bottom: 25px;
+    resize: none;
+}
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+    width: 800px;
+    height: 700px;
+}
+
+#corpo{
+    border-style: solid;
+    border-color: #888888;
+    border-width: 1px;
+    
+    background-color: #f9f9f9;
+    
+    padding: 10px;
+    
+    overflow: auto;
+}
+
+form#noticiaform{
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+table{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+}
+
+td{
+    padding-top: 15px;
+    padding-right: 10px;
+    width: 256px;
+    text-align: center;
+}
+
+h1{
+    font-family: "Segoe UI Light",Arial;
+    font-size: 34px;
+    width: 240px;
+    margin: 0px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+h2{
+    margin: 0px;
+    font-weight: normal;
+}
+
+h3{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Segoe UI Light",Arial;
+}
+
+

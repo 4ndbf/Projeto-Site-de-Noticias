@@ -1,0 +1,98 @@
+/* 
+    Created on : 04/09/2018, 15:14:00
+    Author     : Anderson Bucchainico
+*/
+
+a#links{
+    font-size: 18px;
+    text-decoration: none;
+    float:next;
+    text-align:center;
+    
+    color: #444444;
+    float: left;
+    width: 150px;
+    
+    margin: 0px;
+    
+    padding: 24px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+a#links:hover{
+    background-color: white;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #888888;
+    border-width: 1px;
+    
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+a#links:active{
+    background-color: #bbbbbb;
+    color: #ffffff;
+}
+
+a#botao{
+    height: 350px;
+    width: 230px;
+    color: black;
+    
+    background-color: white;
+    text-align:center;
+    text-decoration: none;
+    
+    border-style: solid;
+    border-color: #888888;
+    border-width: 1px;
+    font-size: 18px;
+    float:left;
+    
+    margin-right: 14px;
+    margin-left: 13px;
+    margin-bottom: 50px;
+}
+
+a#botao:hover{
+    background-color: whitesmoke;
+}
+a#botao:active{
+    background-color: #dddddd;
+}
+
+img{
+    margin-left: 51px;
+    margin-right: 51px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#btnpositivo, #btnnegativo{
+    font-size: 14px;
+    
+    text-decoration: none;
+    color: black;
+    
+    border-style: solid;
+    border-color: #888888;
+    border-width: 1px;
+    
+    padding: 10px;
+    margin-top: 20px;
+    width: 150px;
+    
+}
+#btnpositivo{
+    background-color: #b3eaba;
+}
+#btnnegativo{
+    background-color: #eab3b3;
+}
+#btnpositivo:hover{
+    background-color: white;
+}
+#btnnegativo:hover{
+    background-color: white;
+}
