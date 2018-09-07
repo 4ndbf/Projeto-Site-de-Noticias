@@ -5,7 +5,7 @@ Data: 05/09/2018
 -->
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf8_general_ci">
         <title>Notícias Online</title>
         <link rel="stylesheet" type="text/css" href="/CSS/tema.css">
         <link rel="stylesheet" type="text/css" href="/CSS/botoes.css">
@@ -19,7 +19,7 @@ Data: 05/09/2018
         <section>
             <h2>Adicionar Nova Notícia</h2>
             <article id="corpo">
-                <form action="resultado.php" id="noticiaform" method="POST">
+                <form action="adicionar.php" id="noticiaform" method="POST">
                     <label for="titulo">Título da Notícia</label>
                     <br>
                     <input type="text" name="titulo" maxlength="92" id="inputnoticia" required>

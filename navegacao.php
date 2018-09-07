@@ -1,5 +1,5 @@
     <nav>
-        <h1>Noticias Online</h1>
+        <h1>Tech Online</h1>
         <div id="links">
             <a id="links" href="/index.php">Destaques</a>
             <a id="links" href="/faleconosco.php">Fale Conosco</a>

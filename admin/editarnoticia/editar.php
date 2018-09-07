@@ -16,33 +16,39 @@
             session_start();
             
             //Recebe os valores do form html
-            $id = $_GET["id"];
-            $senha = $_POST["senha"];
             
             //recebe os valores usados para a conexao
+            $senha = isset($_SESSION["senha"])? $_SESSION["senha"] : $senha = '';
             $host = $_SESSION["host"];
             $usuario = $_SESSION["usuario"];
             $basedados = $_SESSION["basedados"];
+            $id = $_GET["id"];
             
             //realiza a conexao com o banco de dados
             if(mysqli_connect_errno($conexao = mysqli_connect($host, $usuario, $senha, $basedados))){
-                echo "Erro de conexao<br>";
+                echo "<b>Erro de conexao com o banco de dados!</b>";
             }
             
-            //informa o codigo da noticia digitado
-            $resultado = mysqli_fetch_array(mysqli_query($conexao, "select id from noticias where id = '$id' limit 1; "));
+            //Recebe os valores do form html
+            $titulo = $_POST["titulo"];
+            $slug = $_POST["titulo"];
+            $descricao = $_POST["descricao"];
+            $conteudo = $_POST["conteudo"];
+            $palavraschave = $_POST["palavraschave"];
             
             //Executa o comando MYSQL_QUERRY para gravar informações no banco de dados
             //Depois irá ser feita uma verificação com o connect_errno pra ver se tudo deu certo
-            if(mysqli_connect_errno( mysqli_query($conexao,"DELETE from noticias WHERE id = '$id';")))
+            if(mysqli_connect_errno( mysqli_query($conexao,"update noticias".
+            "set titulo = '$titulo', slug = '$slug', descricao = '$descricao', conteudo = '$conteudo', palavraschave = '$palavraschave'".
+            "where id = '$id' limit 1;")))
                 {
-                    echo '<b>Erro! não foi possível localizar a noticia e deletá-la.</b>';
+                    echo '<b>Erro! não foi possível localizar a noticia e editá-la.</b>';
                 } else {
                     echo "<section>
-                            <h2>Deletar Notícia</h2>
+                            <h2>Editar Notícia</h2>
                             <article id='corpo'>
                                 <center>
-                                <h3>A notícia foi deletada com sucesso!</h3>
+                                <h3>A notícia selecionada foi alterada com sucesso!</h3>
                                 <a id='btnnegativo' href='/admin/painel_de_controle.php'>Voltar ao painel de controle</a>
                                 <a id='btnpositivo' href='/index.php'>Voltar a página inicial</a>
                                 </center>

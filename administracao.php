@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Noticias Online - Painel de Controle</title>
-        <meta charset="utf-8">
+        <meta charset="utf8_general_ci">
         <link rel="stylesheet" type="text/css" href="CSS/tema.css">
         <link rel="stylesheet" type="text/css" href="CSS/botoes.css">
         <link rel="icon" href="IMG/favicon.ico" />
