@@ -25,7 +25,7 @@ Data: 03/09/2018
                     </tr>
                     <tr>
                         <td><img id="icone" src="/IMG/telefone.png" width="72"></img></td>
-                        <td><h3>Telefone: (013) 98859-8963</h3></td>
+                        <td><h3>Telefone:<br> (013) 98859-8963</h3></td>
                     </tr>
                 </table>  
             </article>

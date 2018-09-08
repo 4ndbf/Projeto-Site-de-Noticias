@@ -11,20 +11,18 @@
         <?php
             include_once '../../navegacao.php';
             
-            $id = $_GET['id'];
-            $slug = $_GET['slug'];
         ?>
         <section>
-            <h2>Deletar Notícia</h2>
+            <h2>Deletar Todas as Notícias</h2>
             <article id="corpo">
                 <h3>Digite sua senha para confirmar</h3>
-                <form action="deletar.php?id=<?php echo $id;?>&slug=<?php echo $slug;?>" id="noticiaform" method="POST">
+                <form action="deletar_tudo.php" id="noticiaform" method="POST">
                     <label for="titulo">Senha da Base de Dados</label>
                     <br>
                     <input type="text" name="senha" maxlength="92" id="inputnoticia">
                     <br>
                     <center>
-                        <input type="submit" name="enviarnoticia" value="Deletar Notícia" id="btnnegativo">
+                        <input type="submit" name="enviarnoticia" value="Deletar Tudo!!!" id="btnnegativo">
                     </center>
                 </form>
             </article>

@@ -37,84 +37,84 @@ Data: 03/09/2018
                 
                 //Era para ter uma estrutura while aqui, mas devido a restrições do projeto
                 //ficou essa sequencia de comandos repetidos abaixo. Ao todo serão 10 repetições.
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 1;"));
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 10;"));
                 if($resultado[0] == "" || $resultado[0] == null){
                     echo '';
                 }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
-                }
-                
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 2;"));
-                if($resultado[0] == "" || $resultado[0] == null){
-                    echo '';
-                }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
-                }
-                
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 3;"));
-                if($resultado[0] == "" || $resultado[0] == null){
-                    echo '';
-                }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
-                }
-                
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 4;"));
-                if($resultado[0] == "" || $resultado[0] == null){
-                    echo '';
-                }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
-                }
-                
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 5;"));
-                if($resultado[0] == "" || $resultado[0] == null){
-                    echo '';
-                }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
-                }
-                
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 6;"));
-                if($resultado[0] == "" || $resultado[0] == null){
-                    echo '';
-                }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
-                }
-                
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 7;"));
-                if($resultado[0] == "" || $resultado[0] == null){
-                    echo '';
-                }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
-                }
-                
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 8;"));
-                if($resultado[0] == "" || $resultado[0] == null){
-                    echo '';
-                }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
                 }
                 
                 $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 9;"));
                 if($resultado[0] == "" || $resultado[0] == null){
                     echo '';
                 }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
                 }
                 
-                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 10;"));
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 8;"));
                 if($resultado[0] == "" || $resultado[0] == null){
                     echo '';
                 }else{
-                    echo "<a id='lista' href=''>".
-                    "<b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                }
+                
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 7;"));
+                if($resultado[0] == "" || $resultado[0] == null){
+                    echo '';
+                }else{
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                }
+                
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 6;"));
+                if($resultado[0] == "" || $resultado[0] == null){
+                    echo '';
+                }else{
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                }
+                
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 5;"));
+                if($resultado[0] == "" || $resultado[0] == null){
+                    echo '';
+                }else{
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                }
+                
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 4;"));
+                if($resultado[0] == "" || $resultado[0] == null){
+                    echo '';
+                }else{
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                }
+                
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 3;"));
+                if($resultado[0] == "" || $resultado[0] == null){
+                    echo '';
+                }else{
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                }
+                
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 2;"));
+                if($resultado[0] == "" || $resultado[0] == null){
+                    echo '';
+                }else{
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
+                }
+                
+                $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 1;"));
+                if($resultado[0] == "" || $resultado[0] == null){
+                    echo '';
+                }else{
+                    echo "<a id='lista' href='$resultado[2]'>".
+                    "<img id='thumbnail' src='$resultado[7]]'></img><b>$resultado[1]</b> <br> $resultado[3] <br> data: $resultado[6]</a>";
                 }
                 ?>
             </article>

@@ -1,5 +1,9 @@
-    <nav>
-        <h1>Tech Online</h1>
+<!--
+Criado por: Anderson Bucchianico
+Data: 03/09/2018
+-->
+<nav>
+    <img id="logo" src="/IMG/logo.png"></img>
         <div id="links">
             <a id="links" href="/index.php">Destaques</a>
             <a id="links" href="/faleconosco.php">Fale Conosco</a>

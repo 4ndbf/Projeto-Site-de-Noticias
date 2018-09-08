@@ -35,7 +35,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=1'>".
+                        echo "<a id='lista' href='formulario_del.php?id=1&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1] </a>";
                     }
                     //2
@@ -43,7 +43,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=2'>" .
+                        echo "<a id='lista' href='formulario_del.php?id=2&slug=$resultado[2]'>" .
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1] </a>";
                     }
                     //3
@@ -51,7 +51,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=3'>".
+                        echo "<a id='lista' href='formulario_del.php?id=3&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //4
@@ -59,7 +59,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=4'>".
+                        echo "<a id='lista' href='formulario_del.php?id=4&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //5
@@ -67,7 +67,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=5'>".
+                        echo "<a id='lista' href='formulario_del.php?id=5&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //6
@@ -75,7 +75,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=6'>".
+                        echo "<a id='lista' href='formulario_del.php?id=6&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //7
@@ -83,7 +83,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=7'>".
+                        echo "<a id='lista' href='formulario_del.php?id=7&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //8
@@ -91,7 +91,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=8'>".
+                        echo "<a id='lista' href='formulario_del.php?id=8&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //9
@@ -99,7 +99,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=9'>".
+                        echo "<a id='lista' href='formulario_del.php?id=9&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //10
@@ -107,9 +107,18 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_del.php?id=10'>".
+                        echo "<a id='lista' href='formulario_del.php?id=10&slug=$resultado[2]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
+                    
+                    echo "<table>"
+                    . "<td></td>"
+                    . "<tr>"
+                    . "<td><a id='btnnegativo' href='form_del_tudo.php'>".
+                    "Deletar todas as notícias</a></td>"
+                    . "</tr>"
+                    . "<td></td>"
+                    . "</table>";
                     ?>
             </article>
         </section>

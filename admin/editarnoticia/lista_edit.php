@@ -35,7 +35,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=1&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=1&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1] </a>";
                     }
                     //2
@@ -43,7 +43,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=2&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>" .
+                        echo "<a id='lista' href='formulario_edit.php?id=2&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>" .
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1] </a>";
                     }
                     //3
@@ -51,7 +51,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=3&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=3&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //4
@@ -59,7 +59,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=4&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=4&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //5
@@ -67,7 +67,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=5&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=5&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //6
@@ -75,7 +75,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=6&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=6&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //7
@@ -83,7 +83,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=7&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=7&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //8
@@ -91,7 +91,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=8&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=8&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //9
@@ -99,7 +99,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=9&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=9&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //10
@@ -107,7 +107,7 @@
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
-                        echo "<a id='lista' href='formulario_edit.php?id=10&titulo=$resultado[1]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]'>".
+                        echo "<a id='lista' href='formulario_edit.php?id=10&titulo=$resultado[1]&slug=$resultado[2]&descricao=$resultado[3]&conteudo=$resultado[4]&palavraschave=$resultado[5]&imagem=$resultado[7]'>".
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     ?>

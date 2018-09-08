@@ -23,26 +23,62 @@
             
             //realiza a conexao com o banco de dados
             if(mysqli_connect_errno($conexao = mysqli_connect($host, $usuario, $senha, $basedados))){
-                echo "Erro de conexao<br>";
+                echo "<b>Erro de conexao com o banco de dados!</b><br>";
             }
             
             //Recebe os valores do form html
             $titulo = $_POST["titulo"];
-            $slug = $_POST["titulo"];
+            $slug = "../../noticias/";
+            $slug = $slug . $_POST["titulo"];
             $descricao = $_POST["descricao"];
             $conteudo = $_POST["conteudo"];
             $palavraschave = $_POST["palavraschave"];
+            $imagem = $_POST['imagem'];
             $data = date("Y/m/d");
+            
+            //tratamento da variavel palavraschave
+            $palavraschave = strtolower($palavraschave);
+            
+            //Tratamento da variavel slug
+            $slug = strtolower($slug);
+            $slug = $slug . ".php";
+            $slug = str_ireplace("?", "", $slug);
+            $slug = str_ireplace("!", "", $slug);
+            $slug = str_ireplace(":", "", $slug);
+            $slug = str_ireplace(" ", "-", $slug);
+            $slug = str_ireplace("ç", "c", $slug);
+            $slug = str_ireplace("ã", "a", $slug);
+            $slug = str_ireplace("á", "a", $slug);
+            $slug = str_ireplace("é", "e", $slug);
+            $slug = str_ireplace("ê", "e", $slug);
+            $slug = str_ireplace("í", "i", $slug);
+            $slug = str_ireplace("õ", "o", $slug);
+            $slug = str_ireplace("ó", "o", $slug);
+            $slug = str_ireplace("ú", "u", $slug);
+            
+            
             
             //Executa o comando MYSQL_QUERRY para gravar informações no banco de dados
             //Depois irá ser feita uma verificação com o connect_errno pra ver se tudo deu certo
-            if(mysqli_connect_errno( mysqli_query($conexao,"insert into noticias (id, titulo, slug, descricao, conteudo, palavraschave, data) values (default, '$titulo', '$slug', '$descricao', '$conteudo', '$palavraschave', '$data');")))
-                {
-                    echo 'Erro!';
-                } else {
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select id from noticias where titulo = '$titulo' limit 1; "));
-                    echo "<section>
-                            <h2>Adicionar Nova Notícia</h2>
+            if(mysqli_connect_errno( mysqli_query($conexao,"insert into noticias (id, titulo, slug, descricao, conteudo, palavraschave, data, imagem) values (default, '$titulo', '$slug', '$descricao', '$conteudo', '$palavraschave', '$data', '$imagem');")))
+            {
+                echo '<h3>Erro! Não foi possível adicionar uma nova notícia ao banco de dados!</h3>';
+            } else {
+                //prepara a página de modelo para ser gravada em um arquivo
+                $_SESSION['titulo'] = $titulo;
+                include ('../modelo_de_noticia.php');
+                @$conteudo_da_pagina = gerar_modelo($conteudo_da_pagina);            
+                //Inicia a gravação de um arquivo php com o conteudo da noticia
+                $nome_do_arquivo = $slug;
+                //Cria o arquivo
+                $adicionador = fopen($nome_do_arquivo, 'w') or die('Erro! Não foi possível criar arquivo da notícia: ' . $nome_do_arquivo);
+                //Grava o conteudo
+                fwrite($adicionador, $conteudo_da_pagina);
+                //Termina a gravação
+                fclose($adicionador);
+                
+                echo "<section>
+                        <h2>Adicionar Nova Notícia</h2>
                             <article id='corpo'>
                                 <center>
                                 <h3>A notícia foi criada com sucesso!</h3>
@@ -52,8 +88,7 @@
                                 <br>
                             </article>
                         </section>";
-                }
-            
+            }
         ?>
     </body>
 </html>

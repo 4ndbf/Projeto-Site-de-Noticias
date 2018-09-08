@@ -10,10 +10,10 @@ a#lista{
     
     color: #444444;
     float: left;
-    width: 640px;
+    width: 680px;
     
-    margin-left: 68px;;
-    margin-right: 68px;
+    margin-left: 40px;;
+    margin-right: 40px;
     margin-top: 0px;
     margin-bottom: 0px;
     
@@ -27,8 +27,8 @@ a#lista:hover{
     border-style: solid;
     border-width: 1px;
     
-    margin-left: 67px;;
-    margin-right: 67px;
+    margin-left: 39px;;
+    margin-right: 39px;
     margin-top: -1px;
     margin-bottom: -1px;
     
@@ -41,4 +41,15 @@ a#lista:active{
 
 b{
     font-size: 18px;
+}
+
+img#thumbnail{
+    margin-right: 15px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 128px;
+    float: left;
+    padding-top: 35px;
+    padding-bottom: 35px;;
 }
