@@ -5,9 +5,7 @@ Projeto dedicado a construir um site de notícias que possua funcionalidades de 
 Este projeto foi construído usando a IDE NetBeans 8.2 em um computador com Windows 10.
 Testado somente nos navegadores Mozilla Firefox 60.0 e Safari 11.0 para iOS.
 
-O login usado para ter acesso ao banco de dados é: 
-Login: root 
-Senha: "vazio"
+O login usado para ter acesso ao banco de dados é: "root" e a senha: "vazio"
 
 Instalação:
 
