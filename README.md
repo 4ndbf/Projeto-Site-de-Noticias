@@ -6,8 +6,8 @@ Este projeto foi construído usando a IDE NetBeans 8.2 em um computador com Wind
 Testado somente nos navegadores Mozilla Firefox 60.0 e Safari 11.0 para iOS.
 
 O login usado para ter acesso ao banco de dados é: 
-login: root 
-senha: "vazio"
+Login: root 
+Senha: "vazio"
 
 Instalação:
 
