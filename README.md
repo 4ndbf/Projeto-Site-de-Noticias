@@ -11,4 +11,8 @@ Instalação:
 
 Antes de mais nada, instale o WampServer: http://www.wampserver.com/en/ Este é um pacote de programas que incluem o Apache, PHP e MySQL, é de suma importância ter estes serviços instalados em seu computador. Certifique-se que os serviços do Apache, PHP e MySQL estão ativados e funcionando corretamente em seu servidor.
 
-Copie os arquivos do site na pasta C:/wamp64/www/ no Windows, importe o arquivo Dump20180908.sql para dentro de seu servidor usando o MySQL Workbench https://dev.mysql.com/downloads/workbench/ e inicie a navegação pelo endereço 127.0.0.1
+Copie os arquivos do site na pasta C:/wamp64/www/ no Windows, importe o arquivo Dump20180908.sql para dentro de seu servidor usando o MySQL Workbench https://dev.mysql.com/downloads/workbench/ 
+
+Caso não saiba como realizar uma importação/exportação no MySQL Workbench: https://dev.mysql.com/downloads/workbench/
+ 
+Inicie a navegação pelo endereço 127.0.0.1
