@@ -13,6 +13,6 @@ Antes de mais nada, instale o WampServer: http://www.wampserver.com/en/ Este é 
 
 Copie os arquivos do site na pasta C:/wamp64/www/ no Windows, importe o arquivo Dump20180908.sql para dentro de seu servidor usando o MySQL Workbench https://dev.mysql.com/downloads/workbench/ 
 
-Caso não saiba como realizar uma importação/exportação no MySQL Workbench: https://dev.mysql.com/downloads/workbench/
+Caso não saiba como realizar uma importação/exportação no MySQL Workbench: https://www.hostnet.com.br/info/importacao-do-banco-via-mysql-workbench/
  
 Inicie a navegação pelo endereço 127.0.0.1
