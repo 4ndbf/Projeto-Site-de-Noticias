@@ -9,6 +9,6 @@ O login usado para ter acesso ao banco de dados é: "root" e a senha: ""
 
 Instalação:
 
-Antes de mais nada, certifique-se que seu serviços do Apache, PHP e MySQL estão ativados e funcionando corretamente em seu servidor.
+Antes de mais nada, instale o WampServer: http://www.wampserver.com/en/ Este é um pacote de programas que incluem o Apache, PHP e MySQL, é de suma importância ter estes serviços instalados em seu computador. Certifique-se que os serviços do Apache, PHP e MySQL estão ativados e funcionando corretamente em seu servidor.
 
-Copie estes arquivos na pasta C:/wamp/www/ no Windows, importe o arquivo .sql para dentro de seu  servidor e inicie a navegação pelo endereço 127.0.0.1.
+Copie estes arquivos na pasta C:/wamp/www/ no Windows, importe o arquivo Dump20180908.sql para dentro de seu servidor usando o MySQL Workbench https://dev.mysql.com/downloads/workbench/ e inicie a navegação pelo endereço 127.0.0.1.
