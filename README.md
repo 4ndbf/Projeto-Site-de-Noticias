@@ -7,7 +7,7 @@ Testado nos navegadores Mozilla Firefox 62.0, Internet Explorer 11 e Safari 11.0
 
 O login usado para ter acesso ao banco de dados é: "root" e a senha: "", caso seu serviço MySQL use uma senha ou login diferente, será preciso inserir estes dados no arquivo index.php, linha número 26.
 
-Testado em ambiente CentOS 7 vitualizado, funcionando sem problemas.
+Testado em ambiente Linux CentOS 7 virtualizado, funcionando sem problemas.
 
 Instalação:
 
