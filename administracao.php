@@ -27,7 +27,7 @@ Data: 03/09/2018
                     <tr>
                         <td><label for="usuario">Nome de Usuário</label></td>
                         <td><input type="text" name="usuario" id="usuario" maxlength="32"></td>
-                        <td rowspan="2"><img src="/IMG/Engrenagens.png" width="100px"></td>
+                        <td rowspan="2"><img src="IMG/Engrenagens.png" width="100px"></td>
                     </tr>
                     <tr>
                         <td><label for="senha">Senha</label></td>

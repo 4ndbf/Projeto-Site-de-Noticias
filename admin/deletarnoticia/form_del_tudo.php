@@ -4,7 +4,7 @@
         <title>Notícias Online</title>
         <link rel="stylesheet" type="text/css" href="/CSS/tema.css">
         <link rel="stylesheet" type="text/css" href="/CSS/botoes.css">
-        <link rel="icon" href="/IMG/favicon.ico" />
+        <link rel="icon" href="IMG/favicon.ico" />
     </head>
     
     <body>

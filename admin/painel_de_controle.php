@@ -31,7 +31,7 @@ Data: 03/09/2018
                  Editar Notícia
             </a>
             <a id="botao" href="deletarnoticia/lista_del.php">
-                <img src="/IMG/deletar.png" width="128">
+                <img src="../IMG/deletar.png" width="128">
                 Deletar Notícia
             </a>
         </article>

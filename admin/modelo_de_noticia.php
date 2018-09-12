@@ -13,9 +13,9 @@
             }
         $titulo = $_SESSION['titulo'];
         //Conseguir o id da noticia recém criada
-                    $id = mysqli_fetch_array(@mysqli_query($conexao, "select id from noticias where titulo = '$titulo' limit 1; "));
+                    $id = mysqli_fetch_array(@mysqli_query($conexao, "select id from Andybf_noticias where titulo = '$titulo' limit 1; "));
                     //Conseguir o conteúdo que já foi gravado no banco
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = $id[0]; "));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = $id[0]; "));
         
          //gravar o modelo dentro da variavel
         $conteudo = "
@@ -25,7 +25,7 @@
                         <title>$resultado[1]</title>
                         <link rel='stylesheet' type='text/css' href='../../CSS/tema.css'>
                         <link rel='stylesheet' type='text/css' href='../../CSS/botoes.css'>
-                        <link rel='icon' href='/IMG/favicon.ico' />
+                        <link rel='icon' href='IMG/favicon.ico' />
                     </head>
                     <body>
                     <?php include_once '../navegacao.php';?>

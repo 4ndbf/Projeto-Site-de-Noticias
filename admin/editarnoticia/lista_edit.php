@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="/CSS/tema.css">
         <link rel="stylesheet" type="text/css" href="/CSS/botoes.css">
         <link rel="stylesheet" type="text/css" href="/CSS/lista_de_noticias.css">
-        <link rel="icon" href="/IMG/favicon.ico" />
+        <link rel="icon" href="IMG/favicon.ico" />
     </head>
     
     <body>
@@ -31,7 +31,7 @@
                     //Era para ter uma estrutura while aqui, mas devido a restrições do projeto
                     //ficou essa sequencia de comandos repetidos abaixo. Ao todo serão 10 repetições.
                     //1
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 1;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 1;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -39,7 +39,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1] </a>";
                     }
                     //2
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 2;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 2;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -47,7 +47,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1] </a>";
                     }
                     //3
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 3;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 3;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -55,7 +55,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //4
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 4;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 4;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -63,7 +63,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //5
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 5;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 5;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -71,7 +71,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //6
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 6;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 6;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -79,7 +79,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //7
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 7;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 7;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -87,7 +87,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //8
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 8;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 8;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -95,7 +95,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //9
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 9;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 9;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{
@@ -103,7 +103,7 @@
                                 "id: $resultado[0] , data: $resultado[6] <br> titulo: $resultado[1]</a>";
                     }
                     //10
-                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from noticias where id = 10;"));
+                    $resultado = mysqli_fetch_array(mysqli_query($conexao, "select * from Andybf_noticias where id = 10;"));
                     if($resultado[0] == "" || $resultado[0] == null){
                         echo '';
                     }else{

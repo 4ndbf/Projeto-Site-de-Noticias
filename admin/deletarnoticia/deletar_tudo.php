@@ -4,7 +4,7 @@
         <title>Notícias Online</title>
         <link rel="stylesheet" type="text/css" href="/CSS/tema.css">
         <link rel="stylesheet" type="text/css" href="/CSS/botoes.css">
-        <link rel="icon" href="/IMG/favicon.ico" />
+        <link rel="icon" href="IMG/favicon.ico" />
     </head>
     
     <body>
@@ -27,17 +27,21 @@
             }
             //Executa o comando MYSQL_QUERRY para gravar informações no banco de dados
             //Depois irá ser feita uma verificação com o connect_errno pra ver se tudo deu certo
-            if(mysqli_connect_errno(@mysqli_query($conexao,"TRUNCATE table noticias;")))
+            if(mysqli_connect_errno(@mysqli_query($conexao,"TRUNCATE table Andybf_noticias;")))
                 {
                     echo '<b>Erro! não foi possível deletar todas as notícias!</b>';
                 } else {
                     
-                    exec("del /q C:\\wamp64\\www\\noticias");/*
+		    //exclui todos os arquivos da pasta
+		    array_map('unlink', glob("/var/www/html/noticias/*"));
+                    //isso aqui só funciona no windows: exec("del /q C:\\wamp64\\www\\noticias");
+		    /* codigo desativado
                     if(mysqli_connect_errno(@rmdir("../../noticias")));
                     {
                     echo '<b>Erro! não foi possível deletar a pasta de notícias,<br>talvez porque não exista ou o sistema deu acesso negado para o site.</b>';
                     }
                     */
+		    //se por acaso a pasta noticias for deletada, aqui ele irá criar ela de novo
                     @mkdir("../../noticias");
                     
                     echo "<section>

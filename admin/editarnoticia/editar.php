@@ -4,7 +4,7 @@
         <title>Notícias Online</title>
         <link rel="stylesheet" type="text/css" href="/CSS/tema.css">
         <link rel="stylesheet" type="text/css" href="/CSS/botoes.css">
-        <link rel="icon" href="/IMG/favicon.ico" />
+        <link rel="icon" href="IMG/favicon.ico" />
     </head>
     
     <body>
@@ -62,7 +62,7 @@
             //Executa o comando MYSQL_QUERRY para gravar informações no banco de dados
             //Depois irá ser feita uma verificação com o connect_errno pra ver se tudo deu certo
             
-             if(mysqli_connect_errno( mysqli_query($conexao,"update noticias set titulo = '$titulo', slug = '$slug', descricao = '$descricao', conteudo = '$conteudo', palavraschave = '$palavraschave', imagem = '$imagem' where id = $id;")))
+             if(mysqli_connect_errno( mysqli_query($conexao,"update Andybf_noticias set titulo = '$titulo', slug = '$slug', descricao = '$descricao', conteudo = '$conteudo', palavraschave = '$palavraschave', imagem = '$imagem' where id = $id;")))
                 {
                     echo '<b>Erro! não foi possível localizar a noticia e editá-la.</b>';
                 } else {

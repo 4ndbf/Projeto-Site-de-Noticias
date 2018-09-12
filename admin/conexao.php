@@ -3,7 +3,7 @@
     //Recebe os valores passados via form html
     $usuario = $_POST["usuario"];
     $senha = $_POST["senha"];
-    $host = "127.0.0.1";
+    $host = "localhost";
     $basedados = "banco_de_noticias";
     
     //coloca esses dados recebidos acima na sessao
@@ -13,7 +13,8 @@
     $_SESSION["basedados"] = $basedados;
     
     //Inicia conexão com a base de dados, o resultado é guardado na var $conexao
-    @$conexao = mysqli_connect($host, $usuario, $senha, $basedados);
+    $conexao = mysqli_connect($host, $usuario, $senha, $basedados);
+    var_dump($conexao);
     @$_SESSION["conexao"] = $conexao;
 
      //decide o que fazer caso a conexao consiga ser feita, e quando não consegue se conectar
